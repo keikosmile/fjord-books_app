@@ -216,15 +216,14 @@ en:
   locales:
     en: English
     ja: Japanese
-  views:
-    common:
-      index: Index
-      show: Show
-      new: "New %{model}"
-      edit: Edit
-      destroy: Destroy
-      destroy_confirm: Are you sure?
-      back: Back
+  common:
+    index: Index
+    show: Show
+    new: "New %{model}"
+    edit: Edit
+    destroy: Destroy
+    destroy_confirm: Are you sure?
+    back: Back
   books:
     index:
       title: "Books"

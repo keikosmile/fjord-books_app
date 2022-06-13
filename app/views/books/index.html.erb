@@ -20,9 +20,9 @@
         <td><%= book.memo %></td>
         <td><%= book.author %></td>
         <td><%= book.picture %></td>
-        <td><%= link_to t('views.common.show'), book %></td>
-        <td><%= link_to t('views.common.edit'), edit_book_path(book) %></td>
-        <td><%= link_to t('views.common.destroy'), book, method: :delete, data: { confirm: t('views.common.destroy_confirm') } %></td>
+        <td><%= link_to t('common.show'), book %></td>
+        <td><%= link_to t('common.edit'), edit_book_path(book) %></td>
+        <td><%= link_to t('common.destroy'), book, method: :delete, data: { confirm: t('common.destroy_confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to t('views.common.new', model: Book.model_name.human), new_book_path %>
+<%= link_to t('common.new', model: Book.model_name.human), new_book_path %>
