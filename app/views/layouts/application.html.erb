@@ -10,8 +10,9 @@
   </head>
 
   <body>
-    <%= link_to_if I18n.locale != :ja, '日本語', url_for(controller: controller.controller_name, action: controller.action_name, locale: 'ja') %>
-    <%= link_to_if I18n.locale != :en, 'English', url_for(controller: controller.controller_name, action: controller.action_name, locale: 'en') %>
+    <% I18n.available_locales.each do |locale| %>
+      <%= link_to_if I18n.locale != locale, t(locale, scope: :locales), url_for(controller: controller.controller_name, action: controller.action_name, locale: locale) %>
+    <% end %>
 
     <%= yield %>
   </body>

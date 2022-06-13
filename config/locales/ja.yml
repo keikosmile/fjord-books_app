@@ -205,6 +205,9 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
+  locales:
+    en: 英語
+    ja: 日本語
   views:
     common:
       index: 一覧
